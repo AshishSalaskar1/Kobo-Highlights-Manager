@@ -1,10 +1,6 @@
 
 <div align="center">
 
-<!-- Replace with your own logo or remove this block -->
-<!-- <img src="docs/assets/logo.png" alt="Kobo Highlight Manager" width="120" /> -->
-
-📚
 
 ## Kobo Highlight Manager
 
