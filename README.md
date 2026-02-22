@@ -1,4 +1,3 @@
-
 <div align="center">
 
 
@@ -25,17 +24,19 @@ Import, browse, search, filter, and export every highlight and annotation from y
 
 ## Why This Exists
 
-Kobo e-readers store highlights and annotations in a local SQLite database (`KoboReader.sqlite`). Accessing them means navigating hidden folders, running raw SQL queries, or relying on Kobo's limited built-in tools. Kobo Highlight Manager solves this by extracting that data and presenting it in an interface designed for reading, revisiting, and organizing your notes.
+Kobo e-readers store highlights and annotations in a local SQLite database (`KoboReader.sqlite`). Accessing them means navigating hidden folders, running raw SQL queries, or relying on Kobo's limited built-in tools. Worse, that file lives on the device itself, with no backup or easy way to browse its contents.
 
-Drop your Kobo database file into the app, and every highlight appears instantly: grouped by book, searchable, filterable, and exportable.
+Kobo Highlight Manager solves this by importing your Kobo data into its own persistent SQLite database (`highlights.db`) on your computer. Once imported, your highlights are safe, searchable, and accessible even without the e-reader connected. Every subsequent upload of the same `KoboReader.sqlite` file upserts the data: new highlights are added, changed entries are updated, and nothing is duplicated.
+
+Drop your Kobo database file into the app, and every highlight appears instantly, grouped by book, searchable, filterable, and exportable.
 
 ## How It Works
 
 1. Connect your Kobo to your computer and copy the `KoboReader.sqlite` file from the hidden `.kobo` folder.
-2. Drop the file into the web app. The server parses the Kobo database and extracts every highlight.
+2. Drop the file into the web app. The server parses the Kobo database, extracts every highlight, and saves it into a local SQLite database (`highlights.db`) for permanent storage.
 3. Browse, search, filter, favorite, and export your highlights in any format you need.
 
-Re-importing is safe. The upsert logic detects changes and updates existing entries without creating duplicates.
+Re-importing is safe and encouraged. Each upload upserts your data: new highlights are inserted, existing ones are updated, and duplicates are never created. This means you can re-import after every reading session to keep your archive current.
 
 ## Features
 [![Chat_GPT_Image_Feb_22_2026_02_01_19_PM.png](https://i.postimg.cc/nVT3RL04/Chat_GPT_Image_Feb_22_2026_02_01_19_PM.png)](https://postimg.cc/vDg7DGRT)
