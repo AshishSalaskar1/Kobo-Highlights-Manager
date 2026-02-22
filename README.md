@@ -1,15 +1,3 @@
----
-title: Kobo Highlight Manager
-description: Import, browse, search, and export highlights from your Kobo e-reader with a modern web interface
-ms.date: 2026-02-22
-keywords:
-  - kobo
-  - highlights
-  - e-reader
-  - annotations
-  - reading
-  - export
----
 
 <div align="center">
 
@@ -32,6 +20,8 @@ Import, browse, search, filter, and export every highlight and annotation from y
 
 </div>
 
+[![Hero_Banner.png](https://i.postimg.cc/wv49FpPX/Hero_Banner.png)](https://postimg.cc/47tCNrXy)
+
 ---
 
 <!-- Screenshot: Full app overview showing book sidebar + highlight cards -->
@@ -52,6 +42,7 @@ Drop your Kobo database file into the app, and every highlight appears instantly
 Re-importing is safe. The upsert logic detects changes and updates existing entries without creating duplicates.
 
 ## Features
+[![Chat_GPT_Image_Feb_22_2026_02_01_19_PM.png](https://i.postimg.cc/nVT3RL04/Chat_GPT_Image_Feb_22_2026_02_01_19_PM.png)](https://postimg.cc/vDg7DGRT)
 
 ### 📥 Drag & Drop Import
 
@@ -225,3 +216,22 @@ Contributions are welcome. Fork the repository, create a feature branch, and ope
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+
+## Application Screenshots
+
+### Upload File View
+[![Upload_File.png](https://i.postimg.cc/Fz13nhKN/Upload_File.png)](https://postimg.cc/fSnVVnXr)
+
+### Main View
+[![Book_Highlight_View.png](https://i.postimg.cc/2yJvsgqp/Book_Highlight_View.png)](https://postimg.cc/jnHLNgQv)
+ 
+### Edit Cover Image
+[![Edit_Cover_Image.png](https://i.postimg.cc/mkqMvKPv/Edit_Cover_Image.png)](https://postimg.cc/7J3f7sM9)
+
+### Export Options
+[![Export_Option.png](https://i.postimg.cc/fyFXG1Vp/Export_Option.png)](https://postimg.cc/p5fp8GYJ)
+
+### Add/Edit Highlights
+[![Highlights_Popup.png](https://i.postimg.cc/L57fcGJG/Highlights_Popup.png)](https://postimg.cc/30XdpSCZ)
+[![Add_Highlight.png](https://i.postimg.cc/BbyDrRjy/Add_Highlight.png)](https://postimg.cc/rR1KWnCC)
